@@ -45,7 +45,7 @@
 </header>
 
 <main>
-	<h1 hidden>Интернет-магазин Техномарт</h1>
+	<h1 class="visually-hidden">Интернет-магазин Техномарт</h1>
 	<section class="features">
 		<ul>
 			<li class="new"><p>Материалы</p><a href="#">На любой вкус</a></li>
@@ -190,6 +190,25 @@
 		<!-- Карта -->
 		<a href="#"><img src="img/map.png" alt="Карта"></a>
 		<a href="#">"Заблудились? Напишите нам!"</a>
+	</section>
+
+	<section>
+		<form action="https://echo.htmlacademy.ru/" method="get">
+			<p>
+				<label for="writeus-name">Ваше имя:</label>
+				<input id="writeus-name" type="text"  placeholder="Имя фамилия">
+			</p>
+			<p>
+				<label for="writeus-email">Ваш email:</label>
+				<input id="writeus-name" type="email"  placeholder="email@example.ru">
+			</p>
+			<p>
+				<label for="writeus-letter">Текст письма:</label>
+				<textarea  id="writeus-name" rows="4" placeholder="В свободной форме"></textarea>
+			</p>
+			<button type="submit">Оформить заказ</button>
+			
+		</form>
 	</section>
 </main>
 
