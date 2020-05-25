@@ -11,7 +11,10 @@
 <header>
 	<section>
 		<a href="index.html"><img class="logo" src="img/logo.png" alt="Техномарт"></a>
-		<label for="search">Поиск:</label><input name="search" type="search" id="search">
+		<form action="https://echo.htmlacademy.ru/" method="get">
+			<label for="search">Поиск:</label><input name="search" type="search" id="search">
+			<button type="submit">Искать</button>
+		</form>
 		<a href="#" class="favorite">Закладки: 0</a>
 		<a href="#" class="cart">Корзина: 0</a>
 		<a href="#">Оформить заказ</a>
@@ -235,15 +238,15 @@
 	<form action="https://echo.htmlacademy.ru/" method="get">
 		<p>
 			<label for="writeus-name">Ваше имя:</label>
-			<input name="writeus-name" id="writeus-name" type="text"  placeholder="Имя фамилия">
+			<input name="writeus-name" id="writeus-name" type="text" placeholder="Имя фамилия">
 		</p>
 		<p>
 			<label for="writeus-email">Ваш email:</label>
-			<input name="writeus-email" id="writeus-email" type="email"  placeholder="email@example.ru">
+			<input name="writeus-email" id="writeus-email" type="email" placeholder="email@example.ru">
 		</p>
 		<p>
 			<label for="writeus-letter">Текст письма:</label>
-			<textarea  id="writeus-letter" name="writeus-letter" rows="4" placeholder="В свободной форме"></textarea>
+			<textarea id="writeus-letter" name="writeus-letter" rows="4" placeholder="В свободной форме"></textarea>
 		</p>
 		<button type="submit">Оформить заказ</button>
 		<button type="button" class="writeus-close">Закрыть</button>

@@ -11,7 +11,10 @@
 <header>
 	<section>
 		<a href="index.html"><img class="logo" src="img/logo.png" alt="Техномарт"></a>
-		<label for="search">Поиск:</label><input type="search" id="search">
+		<form action="https://echo.htmlacademy.ru/" method="get">
+			<label for="search">Поиск:</label><input name="search" type="search" id="search">
+			<button type="submit">Искать</button>
+		</form>
 		<a href="#" class="favorite">Закладки: 0</a>
 		<a href="#" class="cart">Корзина: 0</a>
 		<a href="#">Оформить заказ</a>
@@ -79,8 +82,8 @@
 			<fieldset>
 				<legend>Питание:</legend>
 				<ul>
-					<li><input type="radio" name="power" id="battery" value="p" checked><label for="battery">Аккумуляторные</label></li>
-					<li><input type="radio" name="power" id="ac" value="p"><label for="ac">Сетевые</label></li>
+					<li><input type="radio" name="power" id="battery" value="battery" checked><label for="battery">Аккумуляторные</label></li>
+					<li><input type="radio" name="power" id="ac" value="ac"><label for="ac">Сетевые</label></li>
 				</ul>
 			</fieldset>
 			<button type="submit">Показать</button>
