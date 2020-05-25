@@ -10,7 +10,7 @@
 	
 <header>
 	<section>
-		<img class="logo" src="img/logo.png" alt="Техномарт">
+		<a href="index.html"><img class="logo" src="img/logo.png" alt="Техномарт"></a>
 		<label for="search">Поиск:</label><input type="search" id="search">
 		<a href="#" class="favorite">Закладки: 0</a>
 		<a href="#" class="cart">Корзина: 0</a>
@@ -61,17 +61,19 @@
 			<h2>Фильтр:</h2>
 			<fieldset>
 				<legend>Цена:</legend>
-				<input id="price" type="range" min="0" max="30000" value="25000">
-				<label for="price"><span>0</span> <span>30000</span></label>
+				<input id="price" name="price-range" type="range" min="0" max="30000" value="25000">
+				<input type="text" name="price-min" placeholder="0">
+				<input type="text" name="price-max" placeholder="30000">
+					
 			</fieldset>
 			<fieldset>
 				<legend>Производители:</legend>
 				<ul>
-					<li><input type="checkbox" id="bosch" checked><label for="bosch">Bosch</label></li>
-					<li><input type="checkbox" id="interskol"><label for="interskol">Интерскол</label></li>
-					<li><input type="checkbox" id="makita" checked><label for="makita">Makita</label></li>
-					<li><input type="checkbox" id="dewalt"><label for="dewalt">Dewalt</label></li>
-					<li><input type="checkbox" id="hitachi"><label for="hitachi">Hitachi</label></li>
+					<li><input type="checkbox" name="bosch" id="bosch" checked><label for="bosch">Bosch</label></li>
+					<li><input type="checkbox" name="interskol" id="interskol"><label for="interskol">Интерскол</label></li>
+					<li><input type="checkbox" name="makita" id="makita" checked><label for="makita">Makita</label></li>
+					<li><input type="checkbox" name="dewalt" id="dewalt"><label for="dewalt">Dewalt</label></li>
+					<li><input type="checkbox" name="hitachi" id="hitachi"><label for="hitachi">Hitachi</label></li>
 				</ul>
 			</fieldset>
 			<fieldset>
@@ -205,17 +207,10 @@
 	<p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
 	Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br>
 	В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
-
-
-	<section class="add-to-cart">
-			<a href="#">Оформить заказ</a>
-			<a href="#">Продолжить покупки</a>
-	</section>
-
 </main>
 
 <footer>
-	<img class="logo" src="img/logo.png" alt="Техномарт">
+	<a href="index.html"><img class="logo" src="img/logo.png" alt="Техномарт"></a>
 	<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
 	+7 (812) 555-05-55</p>
 	
@@ -249,5 +244,12 @@
 		<p><span>Разработано — </span><a href="htmlacademy.ru">htmlacademy.ru</a></p>
 	</div>
 </footer>
+
+<section class="add-to-cart">
+	<a href="#">Оформить заказ</a>
+	<button>Продолжить покупки</button>
+	<button type="button" class="add-to-cart-close">Закрыть</button>
+</section>
+
 </body>
 </html>
