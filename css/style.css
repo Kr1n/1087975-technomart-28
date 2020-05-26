@@ -1,3 +1,30 @@
+:root{
+  --basic-grey-extralight: #F3F7F9;
+  --basic-darkblue: #293449;
+  --basic-red: #EE3643;
+  --basic-green: #63A63E;
+  --basic-grey: #3D546F;
+  --basic-black: #000000;
+  --basic-greylight: #C5C5C5;
+  --basic-background: #F1F5F7;
+  --wight: #FFFFFF;
+  --special-yellow: #FFBF47;
+  --special-blue: #3BBCE3;
+  --special-bluelight: #75D0EB;
+  --special-lilac: #DC91D8;
+  --special-lilaclight: #E6B2E4;
+  --special-green: #8ED78F;
+  --special-greenlight: #B0E3B0;
+
+
+  --special-yellowlight: #FFD180;
+  --success: #5FBB2D;
+  --warning: #FFBF47;
+  --error: #BA2732;
+  --special-grey: #EAEAEA;
+  --text-darkblue: #32425C;
+}
+
 .visually-hidden {
   position: absolute;
 
@@ -11,16 +38,108 @@
   overflow: hidden;
 }
 
-img.logo{
-	background-color: red;
+body{
+  color: var(--wight, #ffffff);
+  font-family: 'Cuprum', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
 }
 
-.group11 img{
-	background-color: red;
+a{
+  text-decoration: none;
+  color: var(--wight, #ffffff);
+}
+li{
+  list-style: none;
 }
 
-.socials img{
-	background-color: #212A3A;
-	padding: 5px;
+header{
+  background-color: var(--basic-grey-extralight, #F3F7F9);
 }
 
+.header-top, .menu{
+  background-color: var(--basic-darkblue, #293449);
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.header-top .logo{
+  background-color: var(--basic-red, #EE3643);
+}
+
+.header-top .do-order{
+  background-color: var(--basic-green, #63A63E);
+}
+
+.header-bottom{
+  color: var(--basic-red, #EE3643);
+}
+
+.header-bottom p{
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+}
+
+.header-bottom li a{
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--basic-red, #EE3643);
+
+}
+
+.header-bottom .auth a{
+  color: var(--basic-black, black);
+  background-color: var(--wight, #ffffff);
+  font-size: 21px;
+  line-height: 21px;
+
+}
+.header-bottom address{
+  color: var(--text-darkblue, #32425C);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.material, .deliver, .instrument, .sale, .vehicle{
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.material a, .deliver a, .instrument a, .sale a, .vehicle a{
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.material, .deliver{
+  background-color: var(--special-yellow, #FFBF47);
+}
+.material a, .deliver a{
+  background-color: var(--special-yellowlight, #FFD180);
+}
+
+.instrument{
+  background-color: var(--special-blue, #3BBCE3);
+}
+.instrument a{
+  background-color: var(--special-bluelight, #75D0EB);
+}
+
+.vehicle{
+  background-color: var(--special-lilac, #DC91D8);
+}
+.vehicle a{
+  background-color: var(--special-lilaclight, #E6B2E4);
+}
+
+.sale{
+  background-color: var(--special-green, #8ED78F);
+}
+.sale a{
+  background-color: var(--special-greenlight, #B0E3B0);
+}
