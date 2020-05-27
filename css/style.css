@@ -16,7 +16,6 @@
   --special-green: #8ED78F;
   --special-greenlight: #B0E3B0;
 
-
   --special-yellowlight: #FFD180;
   --success: #5FBB2D;
   --warning: #FFBF47;
@@ -26,22 +25,20 @@
   --background-greylight: #F7F3EC;
 }
 
-.visually-hidden {
+.visually-hidden{
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
 body{
   color: var(--wight, #ffffff);
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   margin: 0;
@@ -51,7 +48,9 @@ a{
   text-decoration: none;
 }
 
-.header ul, .footer ul, .main ul{
+.header ul, 
+.footer ul, 
+.main ul{
   list-style: none;
 }
 
@@ -115,15 +114,18 @@ a{
   text-transform: uppercase;
 }
 
-.filter-price legend, .filter-power legend, .filter-vendors legend{
-  color: black;
+.filter-price legend,
+.filter-power legend, 
+.filter-vendors legend{  color: black;
   font-family: 'PT Sans', sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;
 }
-.filter-price, .filter-vendors, .filter-power{
+.filter-price, 
+.filter-vendors, 
+.filter-power{
   border:0 none;
   color: black;
   font-size: 15px;
@@ -144,7 +146,8 @@ a{
   background-color: var(--background-greylight, #F7F3EC);
 }
 
-.filter h2, .sort h2{
+.filter h2, 
+.sort h2{
   color: black;
   background-color: var(--background-greylight, #F7F3EC);
   font-size: 13px;
@@ -163,7 +166,8 @@ a{
   font-weight: 400;
 }
 
-.breadcrumbs a, .breadcrumbs li{
+.breadcrumbs a, 
+.breadcrumbs li{
   font-size: 13px;
   font-family: 'PT Sans', sans-serif;
   line-height: 18px;
@@ -171,7 +175,8 @@ a{
   text-transform: uppercase;
 }
 
-.writeus input, .writeus textarea{
+.writeus input, 
+.writeus textarea{
   font-family: 'PT Sans', sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -196,7 +201,8 @@ a{
   color: var(--basic-grey-extralight, #F3F7F9);
 }
 
-.footer-lower a, .footer-bottom a{
+.footer-lower a, 
+.footer-bottom a{
   color: var(--special-yellowlight, #FFD180);
 }
 
@@ -214,7 +220,8 @@ a{
   line-height: 24px;
 }
 
-.contacts, .about{
+.contacts, 
+.about{
   color: black;
   font-weight: normal;
   font-size: 13px;
@@ -222,7 +229,8 @@ a{
   font-family: 'PT Sans', sans-serif;
 }
 
-.contacts h2, .about h2{
+.contacts h2, 
+.about h2{
   text-transform: uppercase;
   font-size: 30px;
   line-height: 30px;
@@ -366,7 +374,8 @@ a{
   line-height: 18px;
 }
 
-.popular h2, .vendors h2{
+.popular h2, 
+.vendors h2{
   font-size: 30px;
   line-height: 30px;
   color: var(--text-darkblue, #32425C);
@@ -375,8 +384,6 @@ a{
 }
 
 .slider li{
-  //width: 620px;
-  //height: 266px;
   background-color: var(--basic-grey, #3D546F);
 }
 
@@ -404,12 +411,14 @@ a{
   color: white;
 }
 
-.header-top, .menu{
+.header-top, 
+.menu{
   background-color: var(--basic-darkblue, #293449);
   font-size: 18px;
   line-height: 24px;
 }
-.header-top a, .menu a{
+.header-top a, 
+.menu a{
   color: white;
 }
 
@@ -467,13 +476,21 @@ a{
   line-height: 24px;
 }
 
-.material, .deliver, .instrument, .sale, .vehicle{
+.material, 
+.deliver, 
+.instrument, 
+.sale, 
+.vehicle{
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
 }
 
-.material a, .deliver a, .instrument a, .sale a, .vehicle a{
+.material a, 
+.deliver a, 
+.instrument a, 
+.sale a, 
+.vehicle a{
   text-transform: uppercase;
   font-weight: normal;
   font-size: 14px;
@@ -484,7 +501,8 @@ a{
 .material, .deliver{
   background-color: var(--special-yellow, #FFBF47);
 }
-.material a, .deliver a{
+.material a, 
+.deliver a{
   background-color: var(--special-yellowlight, #FFD180);
 }
 
