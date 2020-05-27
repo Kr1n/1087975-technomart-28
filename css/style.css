@@ -44,16 +44,18 @@ body{
   font-family: 'Cuprum', sans-serif;
   font-size: 18px;
   line-height: 24px;
+  margin: 0;
 }
 
 a{
   text-decoration: none;
 }
-li{
+
+.header ul, .footer ul, .main ul{
   list-style: none;
 }
 
-header{
+.header{
   background-color: var(--basic-grey-extralight, #F3F7F9);
 }
 
@@ -152,7 +154,7 @@ header{
   font-weight: 400;
 }
 
-h1{
+.main h1{
   background-color: #f2f6f8;
   color: var(--text-darkblue, #32425C);
   font-size: 30px;
