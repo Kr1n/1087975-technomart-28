@@ -232,14 +232,18 @@ a{
 
 .services h2{
   text-transform: uppercase;
-  color: black;
   font-size: 30px;
   line-height: 30px;
   font-weight: 400;
+  color: black;
 }
 
-.services div h2{
+.services h3{
   color: var(--text-darkblue, #32425C);
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
 }
 
 .services p{
@@ -253,7 +257,7 @@ a{
   border: 1px solid #EAEAEA;
 }
 
-.button{
+.control{
   background-color: var(--text-darkblue, #32425C);
   color: white;
   border: 0;
@@ -261,7 +265,7 @@ a{
   font-size: 21px;
   line-height: 30px;
 }
-.button.active{
+.control.active{
   background-color: white;
   color: var(--text-darkblue, #32425C);
   border: 0;
@@ -317,6 +321,9 @@ a{
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+  border: 3px solid var(--basic-green, #63A63E);
+  box-sizing: border-box;
+  border-radius: 2px;
 }
 
 .item .add-favorite{
@@ -328,6 +335,7 @@ a{
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+  box-sizing: border-box;
 }
 
 .item{
@@ -423,27 +431,27 @@ a{
   font-style: italic;
 }
 
-.header-bottom li a{
+.header-bottom a{
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
   color: var(--basic-red, #EE3643);
 }
 
-.header-bottom .auth a{
+.auth a{
   color: var(--basic-black, black);
   background-color: var(--wight, #ffffff);
   font-size: 21px;
   line-height: 21px;
 }
 
-.header-bottom .user a{
+.user a{
   color: var(--text-darkblue, #32425C);
   font-size: 16px;
   line-height: 18px;
 }
 
-.header-bottom .user p{
+.user p{
   color: black;
   background-color: var(--wight, #ffffff);
   font-size: 21px;
@@ -499,4 +507,12 @@ a{
 }
 .sale a{
   background-color: var(--special-greenlight, #B0E3B0);
+}
+
+.cart.filled{
+  background-color: var(--basic-red, #EE3643);
+}
+
+.cart.empty{
+  background-color: none;
 }
