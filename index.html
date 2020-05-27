@@ -4,12 +4,14 @@
 <head>
 	<meta charset="utf-8">
 	<title>Техномарт</title>
+	<link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
 <header>
-	<section>
+	<section class="header-top">
 		<a href="index.html"><img class="logo" src="img/logo.png" alt="Техномарт"></a>
 		<form action="https://echo.htmlacademy.ru/" method="get">
 			<label for="search">Поиск:</label><input name="search" type="search" id="search">
@@ -17,10 +19,10 @@
 		</form>
 		<a href="#" class="favorite">Закладки: 0</a>
 		<a href="#" class="cart">Корзина: 0</a>
-		<a href="#">Оформить заказ</a>
+		<a href="#" class="do-order">Оформить заказ</a>
 	</section>
 	
-	<section>
+	<section class="header-bottom">
 		<p>Интернет-магазин
 		строительных материалов
 		и инструментов для ремонта</p>
@@ -51,11 +53,11 @@
 	<h1 class="visually-hidden">Интернет-магазин Техномарт</h1>
 	<section class="features">
 		<ul>
-			<li class="new"><p>Материалы</p><a href="#">На любой вкус</a></li>
-			<li><p>Интструмент</p><a href="#">На все случаи</a></li>
-			<li><p>Техника</p><a href="#">Для стройки</a></li>
-			<li><p>Скидка 50%</p><a href="#">На 350 товаров</a></li>
-			<li><p>Доставка</p><a href="#">Безплатно</a></li>
+			<li class="material new"><p>Материалы</p><a href="#">На любой вкус</a></li>
+			<li class="instrument"><p>Интструмент</p><a href="#">На все случаи</a></li>
+			<li class="vehicle"><p>Техника</p><a href="#">Для стройки</a></li>
+			<li class="sale"><p>Скидка 50%</p><a href="#">На 350 товаров</a></li>
+			<li class="deliver"><p>Доставка</p><a href="#">Безплатно</a></li>
 		</ul>
 		<ul class="slider">
 			<li>
@@ -141,9 +143,9 @@
 		<p>Хороший интернет-магазин отличается от плохого не только ценами!
 		Мы стараемся изо всех сих, чтобы сделать ваши покупки приятными.</p>
 		<ul>
-			<li>Доставка</li>
-			<li>Гарантия</li>
-			<li>Кредит</li>
+			<li><button type="button">Доставка</button></li>
+			<li><button type="button">Гарантия</button></li>
+			<li><button type="button">Кредит</button></li>
 		</ul>
 
 		<div class="delivery">
