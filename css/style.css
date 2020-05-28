@@ -1,4 +1,10 @@
 :root{
+  --header-darkhover: #161D29;
+  --menu-active-darkblue: #1D2739;
+  --text-color-lightgrey: #B2B2B2;
+  --text-whte-opacity: rgba(255, 255, 255, 0.5);
+  --shadow-color-lightgrey: rgba(0, 0, 0, 0.15);
+  --text-color-grey: #A9A9A9;
   --basic-grey-extralight: #F3F7F9;
   --basic-darkblue: #293449;
   --basic-red: #EE3643;
@@ -15,6 +21,11 @@
   --special-lilaclight: #E6B2E4;
   --special-green: #8ED78F;
   --special-greenlight: #B0E3B0;
+
+  --paginator-hover-border: #E5E5E5;
+  --special-hover-bg: rgba(197,197,197,0.3);
+  --special-active-bg: rgba(169,169,169,0.3);
+  --buy-button-active: #518534;
 
   --special-yellowlight: #FFD180;
   --success: #5FBB2D;
@@ -38,7 +49,7 @@
 
 body{
   color: var(--wight, #ffffff);
-  font-family: 'Cuprum', "Arial", sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 24px;
   margin: 0;
@@ -48,10 +59,35 @@ a{
   text-decoration: none;
 }
 
+.footer-bottom a:hover{
+  text-decoration: underline;
+}
+
+.footer-bottom a:active{
+  text-decoration: none;
+  color: var(--basic-red, #EE3643);
+}
+
 .header ul, 
 .footer ul, 
 .main ul{
   list-style: none;
+}
+
+.socials li:hover,
+.socials li:active{
+  background-color: var(--basic-red, #EE3643);
+}
+
+.footer-upper a:hover,
+.footer-lower a:hover{
+  text-decoration: underline;
+}
+
+.footer-upper a:active,
+.footer-lower a:active{
+  opacity: 0.5;
+  text-decoration: none;
 }
 
 .header{
@@ -67,7 +103,7 @@ a{
 }
 
 .content-info p{
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: black;
@@ -75,12 +111,20 @@ a{
 
 .paginator a{
   color: black;
-  border: 1px solid #E5E5E5;
+  border: 1px solid var(--paginator-hover-border, #E5E5E5);
   border-radius: 2px;
   font-size: 13px;
   line-height: 18px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   text-transform: uppercase;
+}
+
+.paginator a:hover{
+  border: 1px solid var(--basic-greylight, #c5c5c5);
+}
+
+.paginator a:active{
+  border: 1px solid var(--basic-red, #EE3643);
 }
 
 .paginator a.active{
@@ -92,23 +136,35 @@ a{
   border-bottom: 1px var(--basic-red, #EE3643) dotted;
 }
 
+.sort .sort-type:hover{
+  border-bottom: 1px var(--basic-red, #EE3643) solid;
+  color: black;
+}
+
 .sort .active{
   color:var(--basic-red, #EE3643);
   border-bottom: none;
 }
 
+.sort .sort-dir:hover{
+  border-bottom: none;
+  color: black;
+}
+
 .sort a{
-  color: #B2B2B2;
+  color: var(--text-color-lightgrey, #B2B2B2);
   background-color: var(--background-greylight, #F7F3EC);
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-weight: 400;
 }
 
+
+
 .filter button{
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -117,7 +173,7 @@ a{
 .filter-price legend,
 .filter-power legend, 
 .filter-vendors legend{  color: black;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
@@ -130,7 +186,7 @@ a{
   color: black;
   font-size: 15px;
   line-height: 19px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   text-transform: uppercase;
   font-weight: normal;
 }
@@ -153,12 +209,12 @@ a{
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-weight: 400;
 }
 
 .main h1{
-  background-color: #f2f6f8;
+  background-color: var(--basic-grey-extralight, #F3F7F9);
   color: var(--text-darkblue, #32425C);
   font-size: 30px;
   line-height: 30px;
@@ -169,7 +225,7 @@ a{
 .breadcrumbs a, 
 .breadcrumbs li{
   font-size: 13px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   line-height: 18px;
   color: black;
   text-transform: uppercase;
@@ -177,11 +233,11 @@ a{
 
 .writeus input, 
 .writeus textarea{
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 24px;
-  color: #A9A9A9;
-  border: 2px solid #C5C5C5;
+  color: var(--text-color-grey, #A9A9A9);
+  border: 2px solid var(--basic-greylight, #c5c5c5);
   border-radius: 2px;
 }
 
@@ -193,6 +249,10 @@ a{
 
 .footer .logo{
   background-color: var(--basic-red, #EE3643);
+}
+
+.footer .logo:active{
+  background-color: var(--basic-error, #BA2732);
 }
 
 .footer{
@@ -215,7 +275,7 @@ a{
 }
 
 .about li{
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 24px;
 }
@@ -226,7 +286,7 @@ a{
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
 }
 
 .contacts h2, 
@@ -234,7 +294,7 @@ a{
   text-transform: uppercase;
   font-size: 30px;
   line-height: 30px;
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   font-weight: 400;
 }
 
@@ -256,13 +316,22 @@ a{
 
 .services p{
   color: black;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
 
 .vendors li{
-  border: 1px solid #EAEAEA;
+  border: 1px solid var(--special-grey, #EAEAEA);
+}
+
+.vendors li:hover{
+  box-shadow: 0px 4px 20px var(--shadow-color-lightgrey ,rgba(0, 0, 0, 0.15));
+}
+
+.vendors li:active{
+  opacity: 0.5;
+  box-shadow: 0px 4px 20px var(--shadow-color-lightgrey ,rgba(0, 0, 0, 0.15));
 }
 
 .control{
@@ -273,6 +342,11 @@ a{
   font-size: 21px;
   line-height: 30px;
 }
+
+.control:hover{
+  background-color: var(--basic-darkblue, #293449);
+}
+
 .control.active{
   background-color: white;
   color: var(--text-darkblue, #32425C);
@@ -285,7 +359,7 @@ a{
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   color: white;
 }
 
@@ -294,7 +368,7 @@ a{
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   color: white;
 }
 
@@ -305,12 +379,15 @@ a{
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', 'Arial', sans-serif;
   color: white;
+  border: 0 none;
 }
 
-.wraper{
-  background-color: #F9F5F0;
+.link:active,
+.link-special:active,
+.link-wide:active{
+  background-color: var(--basic-error, #BA2732);
 }
 
 .footer .wraper{
@@ -334,6 +411,16 @@ a{
   border-radius: 2px;
 }
 
+.item .buy:hover{
+  background-color: var(--success, #5FBB2D);
+  border-color: var(--success, #5FBB2D);
+}
+
+.item .buy:active{
+  background-color: var(--buy-button-active, #518534);
+  border-color: var(--buy-button-active, #518534);
+}
+
 .item .add-favorite{
   background-color: white;
   text-transform: uppercase;
@@ -346,10 +433,19 @@ a{
   box-sizing: border-box;
 }
 
+.item .add-favorite:hover{
+  border-color: var(--text-darkblue, #32425C);
+}
+
+.item .add-favorite:active{
+  border-color: var(--text-darkblue, #32425C);
+  opacity: 0.5;
+}
+
 .item{
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   color: black;
-  border: 1px solid #EAEAEA;
+  border: 1px solid var(--special-grey, #EAEAEA);
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
@@ -357,7 +453,7 @@ a{
 
 .item span{
   text-decoration: line-through;
-  color: #A9A9A9;
+  color: var(--text-color-grey, #A9A9A9);
   text-transform: uppercase;
   font-weight: bold;
   font-size: 17px;
@@ -365,13 +461,17 @@ a{
 }
 
 .item .price{
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   color: var(--wight, #ffffff);
   background-color: var(--basic-red, #EE3643);
   text-transform: uppercase;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
+}
+
+.item .price:active{
+  background-color: var(--basic-error, #BA2732);
 }
 
 .popular h2, 
@@ -411,15 +511,37 @@ a{
   color: white;
 }
 
-.header-top, 
-.menu{
+.header-top{
   background-color: var(--basic-darkblue, #293449);
   font-size: 18px;
   line-height: 24px;
 }
+
+.menu{
+  background-color: var(--text-darkblue, #32425C);
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.menu li:hover{
+  background-color: var(--basic-darkblue, #293449);
+}
+
+.menu li:active{
+  background-color: var(--menu-active-darkblue, #1D2739);
+}
+
 .header-top a, 
 .menu a{
   color: white;
+}
+
+.header-top a:active{
+  color: var(--text-whte-opacity ,rgba(255, 255, 255, 0.5));
+}
+
+.header-top .logo:active{
+  background-color: var(--basic-error, #BA2732);
 }
 
 .header-top .logo{
@@ -429,6 +551,20 @@ a{
 .header-top .do-order{
   background-color: var(--basic-green, #63A63E);
 }
+
+.header-top .do-order:hover{
+  background-color: var(--success, #5FBB2D);
+}
+
+.header-top .cart.empty:active,
+.header-top .favorite:active{
+  background-color: var(--header-darkhover, #161D29);
+}
+
+.header-top .cart.filled:active{
+  background-color: var(--basic-error, #BA2732);
+}
+
 
 .header-bottom{
   color: var(--basic-red, #EE3643);
@@ -454,19 +590,55 @@ a{
   line-height: 21px;
 }
 
+.auth a:hover{
+  color: var(--basic-red, #EE3643);
+}
+
+.auth a:active{
+  color: var(--basic-greylight, #c5c5c5);
+}
+
 .user a{
   color: var(--text-darkblue, #32425C);
   font-size: 16px;
   line-height: 18px;
 }
 
-.user p{
+.user .logout{
+  color: var(--basic-greylight, #c5c5c5);
+}
+
+.user .username{
   color: black;
   background-color: var(--wight, #ffffff);
   font-size: 21px;
   line-height: 21px;
   font-style: normal;
   font-weight: normal;
+}
+
+.user a:hover{
+  color: var(--basic-red, #EE3643);
+}
+
+.user .logout:hover{
+  color: var(--basic-grey, #3D546F);
+}
+
+.user .username:hover{
+  color: black;
+}
+
+.user .logout:active{
+  color: var(--basic-greylight, #c5c5c5);
+}
+
+.user a:active{
+  color: var(--basic-greylight, #c5c5c5);
+}
+
+.user .username:active{
+  color: var(--basic-greylight, #c5c5c5);
 }
 
 .header-bottom address{
@@ -526,6 +698,23 @@ a{
 .sale a{
   background-color: var(--special-greenlight, #B0E3B0);
 }
+
+.material a:hover, 
+.deliver a:hover,
+.sale a:hover,
+.vehicle a:hover,
+.instrument a:hover{
+  background-color: var(--special-hover-bg, rgba(197,197,197,0.3));
+}
+
+.material a:active, 
+.deliver a:active,
+.sale a:active,
+.vehicle a:active,
+.instrument a:active{
+  background-color: var(--special-active-bg, rgba(169,169,169,0.3));
+}
+
 
 .cart.filled{
   background-color: var(--basic-red, #EE3643);
