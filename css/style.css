@@ -13,7 +13,7 @@
   --basic-black: #000000;
   --basic-greylight: #C5C5C5;
   --basic-background: #F1F5F7;
-  --wight: #FFFFFF;
+  --white: #FFFFFF;
   --special-yellow: #FFBF47;
   --special-blue: #3BBCE3;
   --special-bluelight: #75D0EB;
@@ -48,7 +48,7 @@
 }
 
 body{
-  color: var(--wight, #ffffff);
+  color: var(--white, #ffffff);
   font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -129,7 +129,7 @@ a{
 
 .paginator a.active{
   background-color: var(--basic-red, #EE3643);
-  color: white;
+  color: var(--white, #ffffff);
 }
 
 .sort .sort-type{
@@ -172,7 +172,8 @@ a{
 
 .filter-price legend,
 .filter-power legend, 
-.filter-vendors legend{  color: black;
+.filter-vendors legend{  
+  color: black;
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-weight: bold;
   font-size: 17px;
@@ -267,7 +268,7 @@ a{
 }
 
 .footer-upper a{
-  color: white;
+  color: var(--basic-background, #F1F5F7);
 }
 
 .footer-bottom{
@@ -336,7 +337,7 @@ a{
 
 .control{
   background-color: var(--text-darkblue, #32425C);
-  color: white;
+  color: var(--white, #ffffff);
   border: 0;
   font-weight: bold;
   font-size: 21px;
@@ -348,7 +349,7 @@ a{
 }
 
 .control.active{
-  background-color: white;
+  background-color: var(--white, #ffffff);
   color: var(--text-darkblue, #32425C);
   border: 0;
 }
@@ -360,7 +361,7 @@ a{
   line-height: 18px;
   font-weight: normal;
   font-family: 'Cuprum', 'Arial', sans-serif;
-  color: white;
+  color: var(--white, #ffffff);
 }
 
 .link-special{
@@ -369,7 +370,7 @@ a{
   line-height: 18px;
   font-weight: normal;
   font-family: 'Cuprum', 'Arial', sans-serif;
-  color: white;
+  color: var(--white, #ffffff);
 }
 
 .link-wide{
@@ -380,7 +381,7 @@ a{
   line-height: 18px;
   font-weight: normal;
   font-family: 'Cuprum', 'Arial', sans-serif;
-  color: white;
+  color: var(--white, #ffffff);
   border: 0 none;
 }
 
@@ -402,7 +403,7 @@ a{
 .item .buy{
   background-color: var(--basic-green, #63A63E);
   text-transform: uppercase;
-  color: white;
+  color: var(--white, #ffffff);
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -422,7 +423,7 @@ a{
 }
 
 .item .add-favorite{
-  background-color: white;
+  background-color: var(--white, #ffffff);
   text-transform: uppercase;
   color: var(--text-darkblue, #32425C);
   border: 3px solid var(--basic-green, #63A63E);
@@ -462,7 +463,7 @@ a{
 
 .item .price{
   font-family: 'PT Sans', 'Arial', sans-serif;
-  color: var(--wight, #ffffff);
+  color: var(--white, #ffffff);
   background-color: var(--basic-red, #EE3643);
   text-transform: uppercase;
   font-weight: bold;
@@ -508,7 +509,7 @@ a{
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
-  color: white;
+  color: var(--white, #ffffff);
 }
 
 .header-top{
@@ -533,7 +534,7 @@ a{
 
 .header-top a, 
 .menu a{
-  color: white;
+  color: var(--white, #ffffff);
 }
 
 .header-top a:active{
@@ -585,7 +586,7 @@ a{
 
 .auth a{
   color: var(--basic-black, black);
-  background-color: var(--wight, #ffffff);
+  background-color: var(--white, #ffffff);
   font-size: 21px;
   line-height: 21px;
 }
@@ -610,7 +611,7 @@ a{
 
 .user .username{
   color: black;
-  background-color: var(--wight, #ffffff);
+  background-color: var(--white, #ffffff);
   font-size: 21px;
   line-height: 21px;
   font-style: normal;
@@ -648,73 +649,45 @@ a{
   line-height: 24px;
 }
 
-.material, 
-.deliver, 
-.instrument, 
-.sale, 
-.vehicle{
+.services-list li{
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
 }
 
-.material a, 
-.deliver a, 
-.instrument a, 
-.sale a, 
-.vehicle a{
+.link-special{
   text-transform: uppercase;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  color: white;
+  color: var(--white, #ffffff);
+  background-color: rgba(255,255,255,0.3);
 }
 
-.material, .deliver{
+.material,
+.deliver{
   background-color: var(--special-yellow, #FFBF47);
-}
-.material a, 
-.deliver a{
-  background-color: var(--special-yellowlight, #FFD180);
 }
 
 .instrument{
   background-color: var(--special-blue, #3BBCE3);
 }
-.instrument a{
-  background-color: var(--special-bluelight, #75D0EB);
-}
 
 .vehicle{
   background-color: var(--special-lilac, #DC91D8);
-}
-.vehicle a{
-  background-color: var(--special-lilaclight, #E6B2E4);
 }
 
 .sale{
   background-color: var(--special-green, #8ED78F);
 }
-.sale a{
-  background-color: var(--special-greenlight, #B0E3B0);
-}
 
-.material a:hover, 
-.deliver a:hover,
-.sale a:hover,
-.vehicle a:hover,
-.instrument a:hover{
+.link-special:hover{
   background-color: var(--special-hover-bg, rgba(197,197,197,0.3));
 }
 
-.material a:active, 
-.deliver a:active,
-.sale a:active,
-.vehicle a:active,
-.instrument a:active{
+.link-special:active{
   background-color: var(--special-active-bg, rgba(169,169,169,0.3));
 }
-
 
 .cart.filled{
   background-color: var(--basic-red, #EE3643);
