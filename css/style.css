@@ -100,7 +100,7 @@ a{
 }
 
 .content-info h2{
-  color: black;
+  color: var(--basic-black, black);
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -111,12 +111,12 @@ a{
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 24px;
-  color: black;
+  color: var(--basic-black, black);
   margin: 0px;
 }
 
 .paginator a{
-  color: black;
+  color: var(--basic-black, black);
   border: 1px solid var(--paginator-hover-border, #E5E5E5);
   border-radius: 2px;
   font-size: 13px;
@@ -152,7 +152,7 @@ a{
 
 .sort .sort-type:hover{
   border-bottom: 1px var(--basic-red, #EE3643) solid;
-  color: black;
+  color: var(--basic-black, black);
 }
 
 .sort .active{
@@ -162,7 +162,7 @@ a{
 
 .sort .sort-dir:hover{
   border-bottom: none;
-  color: black;
+  color: var(--basic-black, black);
 }
 
 .sort a{
@@ -191,7 +191,7 @@ a{
 .filter-price legend,
 .filter-power legend, 
 .filter-vendors legend{  
-  color: black;
+  color: var(--basic-black, black);
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-weight: bold;
   font-size: 17px;
@@ -202,7 +202,7 @@ a{
 .filter-vendors, 
 .filter-power{
   border:0 none;
-  color: black;
+  color: var(--basic-black, black);
   font-size: 15px;
   line-height: 19px;
   font-family: 'PT Sans', 'Arial', sans-serif;
@@ -226,7 +226,7 @@ a{
 
 .filter h2, 
 .sort h2{
-  color: black;
+  color: var(--basic-black, black);
   background-color: var(--background-greylight, #F7F3EC);
   font-size: 13px;
   line-height: 18px;
@@ -249,7 +249,7 @@ a{
   font-size: 13px;
   font-family: 'PT Sans', 'Arial', sans-serif;
   line-height: 18px;
-  color: black;
+  color: var(--basic-black, black);
   text-transform: uppercase;
 }
 
@@ -277,7 +277,7 @@ padding-right: 10px;
 }
 
 .writeus{
-  color: black;
+  color: var(--basic-black, black);
   font-size: 18px;
   line-height: 24px;
   margin: 0 auto;
@@ -354,7 +354,7 @@ padding-right: 10px;
 
 .contacts, 
 .about{
-  color: black;
+  color: var(--basic-black, black);
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
@@ -375,7 +375,7 @@ padding-right: 10px;
   font-size: 30px;
   line-height: 30px;
   font-weight: 400;
-  color: black;
+  color: var(--basic-black, black);
 }
 
 .services h3{
@@ -387,7 +387,7 @@ padding-right: 10px;
 }
 
 .services p{
-  color: black;
+  color: var(--basic-black, black);
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -547,7 +547,7 @@ padding-right: 10px;
 
 .item{
   font-family: 'PT Sans', 'Arial', sans-serif;
-  color: black;
+  color: var(--basic-black, black);
   border: 1px solid var(--special-grey, #EAEAEA);
   font-weight: bold;
   font-size: 18px;
@@ -771,7 +771,7 @@ display: block;
 }
 
 .user .username{
-  color: black;
+  color: var(--basic-black, black);
   background-color: var(--white, #ffffff);
   font-size: 21px;
   line-height: 21px;
@@ -788,7 +788,7 @@ display: block;
 }
 
 .user .username:hover{
-  color: black;
+  color: var(--basic-black, black);
 }
 
 .user .logout:active{
