@@ -142,7 +142,9 @@ a{
   width: 700px;
 }
 
-
+.paginator{
+  margin-left: 240px;
+}
 
 .sort .sort-type{
   border-bottom: 1px var(--basic-red, #EE3643) dotted;
