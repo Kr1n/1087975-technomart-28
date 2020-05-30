@@ -870,3 +870,45 @@ display: block;
 .cart.empty{
   background-color: none;
 }
+
+.special{
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.special,
+.special-list-top,
+.special-list-bottom,
+.slider{
+  padding:0;
+  margin: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.special-list-top{
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.special-list-bottom{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column; 
+  width: 300px;
+}
+.special-list-bottom li:nth-child(1){
+  margin-bottom: 20px;
+}
+
+.slider{
+  width: 620px;
+}
+
+.special-list-top li{
+    width: 300px;
+  }
