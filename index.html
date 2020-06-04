@@ -11,16 +11,20 @@
 <body>
 
 <header class="header">
-	<section class="header-top">
+	<section class="header-top-wraper">
 		<div class="container">
-			<a><img class="logo" src="img/logo.png" width="108" height="18" alt="Техномарт"></a>
-			<form action="https://echo.htmlacademy.ru/" method="get">
-				<label for="search">Поиск:</label><input name="search" type="search" id="search">
-				<button type="submit">Искать</button>
-			</form>
-			<a href="#" class="favorite">Закладки: 0</a>
-			<a href="#" class="cart empty">Корзина: 0</a>
-			<a href="#" class="do-order">Оформить заказ</a>
+			<a class="logo"><img class="image-logo" src="img/logo.png" width="108" height="18" alt="Техномарт"></a>
+			<ul class="header-top">
+				<li><form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+					<button class="visually-hidden" type="submit"></button>
+					<label for="search" class="visually-hidden">Поиск:</label>
+					<input class="search-input" name="search" type="search" id="search" placeholder="Поиск:">
+				</form>
+				</li>
+				<li><a href="#" class="favorite">Закладки: 0</a></li>
+				<li><a href="#" class="cart empty">Корзина: 0</a></li>
+				<li><a href="#" class="do-order">Оформить заказ</a></li>
+			</ul>
 		</div>
 	</section>
 	<div class="container">
@@ -28,13 +32,13 @@
 			<p>Интернет-магазин
 			строительных материалов
 			и инструментов для ремонта</p>
-			<ul>
+			<ul class="header-contacts">
 				<li><a href="tel:+78125550555">+7 (812) 555-05-55</a></li>
 				<li><address>г. Санкт-Петербург, ул. Б Конюшенная, д.19/8</address></li>
 			</ul>
 			<div class="auth">
-				<a href="#">Войти</a>
-				<a href="#">Регистрация</a>
+				<a href="#" class="login">Войти</a>
+				<a href="#" class="register">Регистрация</a>
 			</div>
 		</section> 
 		
@@ -73,14 +77,12 @@
 			</ul>
 
 			<ul class="slider">
-				<li>
-					<img src="img/slider-hammer-drill.jpg" width="620" height="266" alt="Перфоратор">
+				<li class="slider-hammer-drill ">
 					<h2>Перфораторы</h2>
 					<p>Настоящие мужские игрушки</p>
 					<a href="catalog.html" class="link">Открыть каталог</a>
 				</li>
-				<li class="visually-hidden">
-					<img src="img/slider-drill.jpg" width="620" height="266" alt="Дрели">
+				<li class="slider-drill visually-hidden">
 					<h2>Дрели</h2>
 					<p>Соседям на радость!</p>
 					<a href="catalog.html" class="link">Открыть каталог</a>
@@ -179,19 +181,19 @@
 
 			<div class="services-list">
 				<ul class="services-control">
-					<li><button type="button" class="control active">Доставка</button></li>
+					<li><button type="button" class="control ">Доставка</button></li>
 					<li><button type="button" class="control">Гарантия</button></li>
-					<li><button type="button" class="control">Кредит</button></li>
+					<li><button type="button" class="control active">Кредит</button></li>
 				</ul>
 				<div class="services-items">
-					<div class="delivery">
+					<div class="delivery visually-hidden">
 						<h3>Доставка</h3>
 						<p> Мы с удовольствием доставим ваш товар прямо<br>
 							к вашему подъезду совершенно бесплатно!<br>
 							Ведь мы неплохо заработаем,<br>
 							поднимая его на ваш этаж!</p>
 					</div>
-					<div class="garanty">
+					<div class="garanty  visually-hidden">
 						<h3>Гарантия</h3>
 						<p> Если купленный у нас товар поломается или заискрит,<br>
 							а также в случае пожара, спровоцированного его<br>
@@ -199,7 +201,7 @@
 							гарантии. Мы обменяем сгоревший товар на новый.<br>
 							Дом уж восстановите как-нибудь сами.</p>
 					</div>
-					<div class="credit">
+					<div class="credit active">
 						<h3>Кредит</h3>
 						<p> Залезть в долговую яму стало проще!<br>
 							Кредитные консультанты придут вам на помощь.</p>
@@ -215,7 +217,7 @@
 				<h2>КОМПАНИЯ «Техномарт»</h2>
 				<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
 				ремонта и строительства не оставит равнодушными любителей сэкономить<br>
-				на гастарбайтерах.</p>
+				на гастарбайтерах.</p><br>
 				<p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
 				Техномарт работает со многими транспортными компаниями:</p>
 				<ul>
@@ -232,7 +234,7 @@
 				заехав в наш офис:</p>
 
 				<!-- Карта -->
-				<a href="#"><img src="img/map.jpg" alt="карта" width="300" height="158"></a>
+				<a href="#" class="map"><img src="img/map.jpg" alt="карта" width="300" height="158"></a>
 				<a href="#"  class="link-wide">"Заблудились? Напишите нам!"</a>
 			</section>
 		</div>
@@ -242,7 +244,7 @@
 <footer class="footer">
 	<div class="container">		
 		<nav class="footer-upper">
-			<a href="index.html"><img class="logo" src="img/logo.png" width="108" height="18" alt="Техномарт"></a>
+			<a href="index.html" class="logo"><img class="image-footer-logo" src="img/logo.png" width="108" height="18" alt="Техномарт"></a>
 			<ul class="footer-upper-menu">
 				<li><a href="#">Компания</a></li>
 				<li><a href="#">Новости</a></li>
