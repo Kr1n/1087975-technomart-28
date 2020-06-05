@@ -818,19 +818,6 @@ padding-right: 10px;
   line-height: 18px;
 }
 
-.item .price{
-  font-family: 'PT Sans', 'Arial', sans-serif;
-  color: var(--white, #ffffff);
-  background-color: var(--basic-red, #EE3643);
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 18px;
-}
-
-.item .price:active{
-  background-color: var(--basic-error, #BA2732);
-}
 
 .popular-header,
 .vendors-header{
@@ -1643,6 +1630,7 @@ display: block;
   justify-content: flex-start;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 
 .popular-list .item:hover,
@@ -1655,6 +1643,26 @@ display: block;
   min-height: 179px;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.item.new::after{
+  color: var(--white, #ffffff);
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  background-color: var(--basic-red, #EE3643);
+  content: "new";
+  right: -30px;
+  top: 5px;
+  transform: rotate(45deg);
+  justify-content: center;
+  text-transform: uppercase;
+  display: flex;
   align-items: center;
 }
 
@@ -1675,6 +1683,13 @@ display: block;
 }
 
 .item .price{
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  color: var(--white, #ffffff);
+  background-color: var(--basic-red, #EE3643);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
   margin-top: 13px;
   min-height: 38px;
   padding-top: 10px;
@@ -1684,6 +1699,10 @@ display: block;
   padding-left: 31px;
   position: relative;
   margin-bottom: 21px;
+}
+
+.item .price:active{
+  background-color: var(--basic-error, #BA2732);
 }
 
 .item .price::after{
