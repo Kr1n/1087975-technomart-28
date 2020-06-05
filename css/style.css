@@ -763,6 +763,7 @@ padding-right: 10px;
   line-height: 18px;
   font-weight: 400;
   box-sizing: border-box;
+  position: absolute;
 }
 
 .item .add-favorite:hover{
@@ -1602,7 +1603,8 @@ display: block;
   background-size: cover;
 }
 
-.popular-list .item{
+.popular-list .item,
+.item-list .item{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1611,5 +1613,14 @@ display: block;
 
 .item img{
   flex-basis: 178px;
-  
+}
+
+.item h3,
+.item h2{
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
 }
