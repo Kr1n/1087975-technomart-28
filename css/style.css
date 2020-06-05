@@ -985,11 +985,11 @@ padding-right: 10px;
   text-align: center;
 }
 
-.menu li:hover,{
+.menu li:hover{
   background-color: var(--basic-darkblue, #293449);
 }
 
-.menu li:active,{
+.menu li:active{
   background-color: var(--menu-active-darkblue, #1D2739);
 }
 
