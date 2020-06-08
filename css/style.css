@@ -245,6 +245,94 @@ a{
   background-color: var(--background-greylight, #F7F3EC);
   font-size: 17px;
   line-height: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 95px;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.filter-price legend{
+  margin-bottom: 11px;
+}
+
+
+.filter-vendors legend{
+  margin-bottom: 17px;
+}
+
+.filter-vendors label{
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.filter-vendors label::before{
+  position: absolute;
+  content: "";
+  width: 27px;
+  height: 23px;
+  left: 0px;
+  background-image: url(../img/input-checkbox-off.svg);
+  background-repeat: no-repeat;
+  top: -2px;
+}
+
+.filter-vendors input:checked + label::before{
+  background-image: url(../img/input-checkbox-on.svg);
+}
+
+.range-text{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+
+.filter-power legend{
+  margin-bottom: 23px;
+}
+
+.filter-power label{
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.filter-power label::before{
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  left: 0px;
+  background-image: url(../img/input-radio-off.svg);
+  background-repeat: no-repeat;
+  top: -4px;
+}
+
+.filter-power input:checked + label::before{
+  background-image: url(../img/input-radio-on.svg);
+}
+
+.price-min{
+  margin-right: 30px;
+  position: relative;
+}
+
+.price-min::after{
+  position: absolute;
+  content: "-";
+  width: 30px;
+  font-family: PT Sans;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  right: -30px;
 }
 
 .filter h2{
@@ -304,6 +392,7 @@ a{
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 18px;
+  margin-bottom: 14px;
 }
 
 .sort h2{
