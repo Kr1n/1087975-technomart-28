@@ -84,6 +84,10 @@ a{
   padding:0px;
 }
 
+.slider{
+  margin-top: auto;
+}
+
 .socials a:hover::before,
 .socials a:active::before{
   background-color: var(--basic-red, #EE3643);
@@ -139,6 +143,7 @@ a{
   text-transform: uppercase;
   padding: 10px 15px;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .paginator .prev,
@@ -167,9 +172,10 @@ a{
 .paginator{
   margin-left: 240px;
   margin-top: 30px;
-  margin-bottom: 59px;
+  margin-bottom: 49px;
   display: flex;
   box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 .sort .sort-type{
@@ -1252,7 +1258,9 @@ padding-bottom: 20px;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
+  width: calc(100% + 20px);
+  margin: 0 -10px;
 }
 
 .vendor-list li{
@@ -1261,6 +1269,8 @@ padding-bottom: 20px;
   text-align: center;
   min-height: 145px;
   margin-bottom: 20px;
+  flex-basis: calc(25% - 20px);
+  margin: 0 10px 20px;
 }
 
 .vendor-list a{
@@ -1360,13 +1370,22 @@ padding-bottom: 20px;
 display: block;
 }
 
-.header-top,
 .header-bottom,
 .menu ul{
   display: flex;
   justify-content: stretch;
   align-items: stretch;
   }
+
+.header-top{
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.menu ul{
+  flex-wrap: wrap;
+}
 
 .menu li{
   flex-grow: 1;
@@ -1395,8 +1414,7 @@ display: block;
   padding: 0;
   margin: 0;
   left: 17px;
-  top: 10px;
-
+  top: calc(50% - 11px);
 }
 
 .search-input{
@@ -1497,6 +1515,7 @@ display: block;
   padding-top: 12px;  
   box-sizing: border-box;
   display: block;
+  align-self: stretch;
 }
 
 .logo::after{
@@ -1555,6 +1574,7 @@ display: block;
 }
 
 .header-bottom p{
+  flex-shrink: 0;
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
@@ -1679,6 +1699,7 @@ display: block;
 .user-wrapper-lower{
   padding-top: 7px;
   text-align: center;
+  padding-bottom: 7px;
 }
 
 .user-wrapper-lower .my-orders{
@@ -1765,6 +1786,7 @@ display: block;
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
+  max-width: 270px;
 }
 
 .services-control li{
@@ -1869,7 +1891,6 @@ display: block;
   position: relative;
   padding-top: 9px;
   padding-bottom: 9px;
-  padding-right: 26px;
   padding-left: 49px;
   width: 150px;
   display: block;
@@ -1958,6 +1979,7 @@ display: block;
 .special p{
   margin: 0;
   padding-bottom: 14px;
+  padding-right: 115px;
 }
 
 .special .link-special{
@@ -2129,6 +2151,7 @@ display: block;
 .item .prev-price{
   padding-top: 8px;
   min-height: 18px;
+  padding-bottom: 13px;
 }
 
 .item .price{
@@ -2139,7 +2162,6 @@ display: block;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
-  margin-top: 13px;
   padding-top: 10px;
   padding-bottom: 10px;
   box-sizing: border-box;
@@ -2148,6 +2170,7 @@ display: block;
   padding-left: 31px;
   position: relative;
   margin-bottom: 21px;
+  margin-top: auto;
 }
 
 .item .price:active{
