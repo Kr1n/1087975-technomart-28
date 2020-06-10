@@ -1339,6 +1339,30 @@ padding-bottom: 20px;
   position: relative;
 }
 
+.slider::before{
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  border-bottom: 3px solid var(--white, #ffffff);
+  border-left: 3px solid var(--white, #ffffff);
+  transform: rotate(45deg);
+  top: 122px;
+  left: 25px;
+}
+
+.slider::after{
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  border-top: 3px solid var(--white, #ffffff);
+  border-right: 3px solid var(--white, #ffffff);
+  transform: rotate(45deg);
+  top: 122px;
+  right: 25px;
+}
+
 .header-top-wrapper{
   background-color: var(--basic-darkblue, #293449);
   font-size: 18px;
