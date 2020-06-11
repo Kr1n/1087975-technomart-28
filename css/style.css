@@ -271,6 +271,14 @@ a{
   padding-bottom: 10px;
 }
 
+.filter button:hover{
+  border: 1px solid var(--basic-greylight, #c5c5c5);
+}
+
+.filter button:active{
+  border: 1px solid var(--basic-red, #EE3643);
+}
+
 .filter-price legend,
 .filter-power legend, 
 .filter-vendors legend{  
@@ -339,6 +347,10 @@ a{
   background-image: url(../img/input-checkbox-on.svg);
 }
 
+.filter-vendors .input-vendors:disabled + label{
+  opacity: 0.4;
+}
+
 .range-text{
   display: flex;
   justify-content: space-between;
@@ -368,6 +380,14 @@ a{
 
 .filter-power input:checked + label::before{
   background-image: url(../img/input-radio-on.svg);
+}
+
+.filter-vendors input:checked + label::before{
+  background-image: url(../img/input-checkbox-on.svg);
+}
+
+.filter-power .input-power:disabled + label{
+  opacity: 0.4;
 }
 
 .price-min{
@@ -875,6 +895,10 @@ padding-bottom: 20px;
   padding-bottom: 9px;
   box-sizing: border-box;
   display: block;
+}
+
+.about .link:active{
+  background-color: var(--basic-error, #BA2732);
 }
 
 .about p,
@@ -1698,7 +1722,11 @@ display: block;
 }
 
 .login:hover path{
-  fill: var(--basic-grey, #3D546F);;
+  fill: var(--basic-grey, #3D546F);
+}
+
+.login:active path{
+  fill: var(--basic-greylight, #c5c5c5);
 }
 
 .user a{
