@@ -204,9 +204,9 @@
 
 			<div class="services-list">
 				<ul class="services-control">
-					<li><button type="button" class="control active">Доставка</button></li>
-					<li><button type="button" class="control ">Гарантия</button></li>
-					<li><button type="button" class="control ">Кредит</button></li>
+					<li><button type="button" itemName="delivery" class="control active">Доставка</button></li>
+					<li><button type="button" itemName="garanty"class="control ">Гарантия</button></li>
+					<li><button type="button" itemName="credit"class="control ">Кредит</button></li>
 				</ul>
 				<ul class="services-items">
 					<li class="delivery active">
@@ -216,7 +216,7 @@
 							Ведь мы неплохо заработаем,<br>
 							поднимая его на ваш этаж!</p>
 					</li>
-					<li class="garanty visually-hidden">
+					<li class="garanty">
 						<h3>Гарантия</h3>
 						<p> Если купленный у нас товар поломается или заискрит,<br>
 							а также в случае пожара, спровоцированного его<br>
@@ -224,7 +224,7 @@
 							гарантии. Мы обменяем сгоревший товар на новый.<br>
 							Дом уж восстановите как-нибудь сами.</p>
 					</li>
-					<li class="credit visually-hidden">
+					<li class="credit">
 						<h3>Кредит</h3>
 						<p> Залезть в долговую яму стало проще!<br>
 							Кредитные консультанты придут вам на помощь.</p>
@@ -258,7 +258,7 @@
 
 				<!-- Карта -->
 				<a href="#" class="map"><img src="img/map.jpg" alt="карта" width="300" height="158"></a>
-				<a href="#"  class="link-wide">"Заблудились? Напишите нам!"</a>
+				<a href="#"  class="link-wide writeus-link">"Заблудились? Напишите нам!"</a>
 			</section>
 		</div>
 	</div>
@@ -306,18 +306,18 @@
 	<form action="https://echo.htmlacademy.ru/" method="get">
 		<p class="name">
 			<label for="writeus-name">Ваше имя:</label>
-			<input name="writeus-name" id="writeus-name" type="text" placeholder="Имя фамилия">
+			<input name="writeus-name" id="writeus-name" type="text" placeholder="Имя фамилия" required>
 		</p>
 		<p class="email">
 			<label for="writeus-email">Ваш email:</label>
-			<input name="writeus-email" id="writeus-email" type="email" placeholder="email@example.ru">
+			<input name="writeus-email" id="writeus-email" type="email" placeholder="email@example.ru" required>
 		</p>
 		<p class="letter">
 			<label for="writeus-letter">Текст письма:</label>
-			<textarea id="writeus-letter" name="writeus-letter" rows="4" placeholder="В свободной форме"></textarea>
+			<textarea id="writeus-letter" name="writeus-letter" rows="4" placeholder="В свободной форме" required></textarea>
 		</p>
 		<div class="wrapper">
-			<button type="submit" class="link-wide">Отправить</button>
+			<button type="submit" class="link-wide writeus-submit">Отправить</button>
 		</div>
 		<button type="button" class="writeus-close"></button>
 	</form>
@@ -328,6 +328,6 @@
 	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124007!2d30.32089461617356!3d59.93879686904788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1591776300450!5m2!1sru!2sru" width="943" height="442" allowfullscreen title="Офис компании находится по адресу Санкт-Петербург, Большая Конюшенная ул., 19"></iframe>
 	<button type="button" class="map-close"></button>
 </section>
-
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

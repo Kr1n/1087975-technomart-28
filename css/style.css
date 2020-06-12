@@ -271,10 +271,12 @@ a{
   padding-bottom: 10px;
 }
 
+.continue-shopping:hover,
 .filter button:hover{
   border: 1px solid var(--basic-greylight, #c5c5c5);
 }
 
+.continue-shopping:active,
 .filter button:active{
   border: 1px solid var(--basic-red, #EE3643);
 }
@@ -542,9 +544,12 @@ padding-bottom: 20px;
   margin: auto;
   width: 943px;
   height: 442px;
-  
   border-top: 7px solid #FF5257;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.map-show{
+  display: block;
 }
 
 .writeus input, 
@@ -552,7 +557,7 @@ padding-bottom: 20px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
-  color: var(--text-color-grey, #A9A9A9);
+  color: var(--basic-black, black);
   border: 2px solid var(--basic-greylight, #c5c5c5);
   border-radius: 2px;
   display: block;
@@ -560,6 +565,12 @@ padding-bottom: 20px;
   margin-top: 11px;
   padding-left: 12px;
 }
+
+.writeus input:placeholder, 
+.writeus textarea:placeholder{
+  color: var(--text-color-grey, #A9A9A9);
+}
+
 
 .writeus .name{
   margin-right: 20px;
@@ -598,7 +609,7 @@ padding-bottom: 20px;
 .writeus-close,
 .add-to-cart-close{
   position: absolute;
-
+  cursor: pointer;
   background-color: transparent;
   background-image: url("../img/icon-close.svg");
   background-repeat: no-repeat;
@@ -636,6 +647,11 @@ padding-bottom: 20px;
   box-sizing: border-box;
 }
 
+
+.writeus.writeus-show{
+  display: block;
+}
+
 .writeus .wrapper{
   background-color: var(--form-wrapper-bg, #F4F4F4);
   width: 100%;
@@ -671,6 +687,10 @@ padding-bottom: 20px;
   box-sizing: border-box;
 }
 
+.add-show{
+  display: block;
+}
+
 .successful-text{
   font-family: "Cuprum", "Arial", sans-serif;
   font-style: normal;
@@ -700,7 +720,7 @@ padding-bottom: 20px;
 .continue-shopping{
   margin: 0;
   padding: 0;
-  border: 0;
+  border: 1px solid var(--white, white);
   background-color: var(--white, white);
   text-transform: uppercase;
   font-size: 14px;
@@ -711,8 +731,9 @@ padding-bottom: 20px;
   left: 24px;
   width: 192px;
   font-family: "Cuprum", "Arial", sans-serif;
-  padding-top: 11px;
-  padding-bottom: 9px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  cursor: pointer;
 }
 
 .add-to-cart .do-order{
@@ -1039,6 +1060,10 @@ padding-bottom: 20px;
 .slider .link:active,
 .link-special:active,
 .link-wide:active{
+  background-color: var(--basic-error, #BA2732);
+}
+
+.link:active{
   background-color: var(--basic-error, #BA2732);
 }
 
@@ -1897,6 +1922,14 @@ display: block;
   padding-top: 46px;
   position: relative;
   flex-grow: 1;
+}
+
+.services-items li{
+  display: none;
+}
+
+.services-items li.active{
+  display: block;
 }
 
 .services-header{
