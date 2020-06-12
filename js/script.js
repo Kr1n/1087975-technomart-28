@@ -41,11 +41,15 @@ try{
 	writeus_close.addEventListener("click", function(e){
 		e.preventDefault();
 		writeus_popup.classList.remove("writeus-show");
+		writeus_popup.classList.remove("modal-error");
 	})
 
 	writeus_submit.addEventListener("click", function(e){
 		if (!writeus_name.value || !writeus_email.value || !writeus_letter.value){
 			e.preventDefault();
+			writeus_popup.classList.remove("modal-error");
+			writeus_popup.offsetWidth = writeus_popup.offsetWidth;
+			writeus_popup.classList.add("modal-error");
 		}
 		else if (is_storage_support){
 			localStorage.setItem("name",writeus_name.value);
