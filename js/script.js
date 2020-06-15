@@ -184,3 +184,20 @@ slider_prev.addEventListener("click", function(e) {
 		}
 	}
 })
+
+/*
+var timerId = setTimeout(function tick() {
+	
+	for (var i = 0; i < slider_items.length; i++) {
+		if (slider_items[i].classList.contains("active")){
+			slider_items[i].classList.remove("active");
+			slider_buttons[i].classList.remove("active");
+
+			if (++i == slider_items.length) i = 0;
+			slider_items[i].classList.add("active");
+			slider_buttons[i].classList.add("active");
+		}
+	}
+	setTimeout(tick, '1000');
+}, '500');
+*/
