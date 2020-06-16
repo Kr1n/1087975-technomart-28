@@ -221,6 +221,7 @@ a{
 
 .content{
   width: 700px;
+  overflow: hidden;
 }
 
 .paginator{
@@ -1222,17 +1223,11 @@ padding-bottom: 20px;
   margin: 0 auto;
   width: 940px;
   position: relative;
-  overflow: hidden;
 }
 
 .footer-lower p{
   margin: 0px;
   padding: 0px;
-}
-
-.item-list li{
-  width: 220px;
-  margin-right: 20px;
 }
 
 .item .buy{
@@ -1339,6 +1334,10 @@ padding-bottom: 20px;
   display: none;
 }
 
+.popular .container{
+  overflow: hidden;
+}
+
 .popular-header,
 .vendors-header{
   background-color: var(--background-purplelight, #F9F5F0);
@@ -1371,12 +1370,15 @@ padding-bottom: 20px;
   box-sizing: border-box;
   flex-basis: calc(25% - 20px);
   margin: 0 10px 18px; 
+  position: relative;
 }
 
 .item-list li{
   box-sizing: border-box;
   flex-basis: calc(33.3% - 20px);
   margin: 0 10px 19px;
+  width: 220px;
+  position: relative;
 }
 
 .popular-header h2,
@@ -1385,6 +1387,10 @@ padding-bottom: 20px;
   margin-right: auto;
   margin-top: 30px;
   margin-bottom: 29px;
+}
+
+.vendors .container{
+  overflow: hidden;
 }
 
 .popular h2, 
@@ -1543,7 +1549,7 @@ display: block;
 .header-top{
   display: flex;
   justify-content: stretch;
-  align-items: center;
+  align-items: stretch;
 }
 
 .menu ul{
@@ -1643,7 +1649,7 @@ display: block;
 .favorite::before{
   content: "";
   position: absolute;
-  top: 13px;
+  top: calc(50% - 8px);
   left: 6px;
   width: 14px;
   height: 16px;
@@ -1672,8 +1678,39 @@ display: block;
   color: var(--text-whte-opacity ,rgba(255, 255, 255, 0.5));
 }
 
+
+.footer .logo{
+  background-color: var(--basic-red, #EE3643);
+  padding-top: 20px;
+  padding-bottom: 14px;
+  align-self: flex-start;
+}
+
+.footer .logo:active{
+  background-color: var(--basic-error, #BA2732);
+}
+
+.header-top .do-order{
+  background-color: var(--basic-green, #63A63E);
+  padding-top: 10px;
+  padding-bottom: 8px;
+  padding-left: 19px;
+  width: 150px;
+  box-sizing: border-box;
+}
+
+.header-top a{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 .logo:active{
   background-color: var(--basic-error, #BA2732);
+}
+
+.header-top .logo{
+  display: block;
 }
 
 .logo{
@@ -1696,27 +1733,6 @@ display: block;
   height: 5px;
   bottom: -5px;
   left: 0px;
-}
-
-.footer .logo{
-  background-color: var(--basic-red, #EE3643);
-  padding-top: 20px;
-  padding-bottom: 14px;
-  align-self: flex-start;
-}
-
-.footer .logo:active{
-  background-color: var(--basic-error, #BA2732);
-}
-
-.header-top .do-order{
-  background-color: var(--basic-green, #63A63E);
-  padding-top: 10px;
-  padding-bottom: 8px;
-  padding-left: 19px;
-  width: 150px;
-  display: block;
-  box-sizing: border-box;
 }
 
 .header-top .do-order:hover{
@@ -2083,7 +2099,7 @@ display: block;
 .cart::before{
   content: "";
   position: absolute;
-  top: 13px;
+  top: calc(50% - 8px);
   left: 12px;
   width: 15px;
   height: 15px;
