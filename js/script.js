@@ -144,18 +144,18 @@ if (slider){
 	let activeSlide = 1;
 
 	function changeSlide(index) {
-		slider_buttons[activeSlide].classList.remove('active');
-		slider_items[activeSlide].classList.remove('active');
+		slider_buttons[activeSlide].classList.remove("active");
+		slider_items[activeSlide].classList.remove("active");
 		activeSlide = index;
-		slider_buttons[activeSlide].classList.add('active');
-		slider_items[activeSlide].classList.add('active');
+		slider_buttons[activeSlide].classList.add("active");
+		slider_items[activeSlide].classList.add("active");
 	}
 
 
 	slider_buttons.forEach((element, i) => 
 		element.addEventListener("click", function(evt){
 			evt.preventDefault();
-		    if (element.classList.contains('active')){
+		    if (element.classList.contains("active")){
 		      return;
 		    }
 		    changeSlide(i);

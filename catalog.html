@@ -105,13 +105,13 @@
 							<div class="scale">
 								<div class="bar"></div>
 							</div>
-							<div class="toggle toggle-min"></div>
-							<div class="toggle toggle-max"></div>
+							<button class="toggle toggle-min"></button>
+							<button class="toggle toggle-max"></button>
 						</div>
 
 						<div class="range-text">
-							<input class="price-min" type="number" name="price-min" step="100" placeholder="0">
-							<input class="price-max" type="number" name="price-max" step="100" placeholder="30000">
+							<input class="price-min" type="text" name="price-min" placeholder="0">
+							<input class="price-max" type="text" name="price-max" placeholder="30000">
 						</div>
 					</fieldset>
 
@@ -155,7 +155,7 @@
 						</ul>
 					</fieldset>
 
-					<button type="submit">Показать</button>
+					<button type="submit" class="filter-button">Показать</button>
 				</form>
 			</section>
 
@@ -184,7 +184,7 @@
 					<li>
 						<article class="item">
 							<div class="item-image">
-								<img src="img/snippet-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
+								<img src="img/snippet-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
 							</div>
 							<h2>Перфоратор BOSCH BFG 6000</h2>
 							<span class="prev-price">30500 р.</span><a href="#" class="price">25500 р.</a>
@@ -198,7 +198,7 @@
 					<li>
 						<article class="item">
 							<div class="item-image">
-								<img src="img/snippet-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
+								<img src="img/snippet-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
 							</div>
 							<h2>Перфоратор BOSCH BFG 6000</h2>
 							<span class="prev-price">30500 р.</span><a href="#" class="price">25500 р.</a>
@@ -212,7 +212,7 @@
 					<li>
 						<article class="item new">
 							<div class="item-image">
-								<img src="img/snippet-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
+								<img src="img/snippet-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
 							</div>
 							<h2>Перфоратор BOSCH BFG 6000</h2>
 							<span class="prev-price">30500 р.</span><a href="#" class="price">25500 р.</a>
@@ -228,7 +228,7 @@
 					<li>
 						<article class="item new">
 							<div class="item-image">
-								<img src="img/snippet-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127" height="112">
+								<img src="img/snippet-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
 							</div>
 							<h2>Перфоратор BOSCH BFG 3000</h2>
 							<span class="prev-price">22500 р.</span><a href="#" class="price">15500 р.</a>
@@ -256,7 +256,7 @@
 					<li>
 						<article class="item new">
 							<div class="item-image">
-								<img src="img/snippet-3000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112">
+								<img src="img/snippet-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
 							</div>
 							<h2>Перфоратор BOSCH BFG 2000</h2>
 							<span class="prev-price"></span><a href="#" class="price">12500 р.</a>
@@ -272,7 +272,7 @@
 					<li>
 						<article class="item new">
 							<div class="item-image">
-								<img src="img/snippet-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127" height="112">
+								<img src="img/snippet-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
 							</div>
 							<h2>Перфоратор BOSCH BFG 3000</h2>
 							<span class="prev-price">22500 р.</span><a href="#" class="price">15500 р.</a>
@@ -286,7 +286,7 @@
 					<li>
 						<article class="item">
 							<div class="item-image">
-								<img src="img/snippet-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
+								<img src="img/snippet-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
 							</div>
 							<h2>Перфоратор BOSCH BFG 6000</h2>
 							<span class="prev-price">30500 р.</span><a href="#" class="price">25500 р.</a>
@@ -300,7 +300,7 @@
 					<li>
 						<article class="item new">
 							<div class="item-image">
-								<img src="img/snippet-3000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112">
+								<img src="img/snippet-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
 							</div>
 							<h2>Перфоратор BOSCH BFG 2000</h2>
 							<span class="prev-price"></span><a href="#" class="price">12500 р.</a>
@@ -347,8 +347,10 @@
 			</ul>
 		</nav>
 		<nav class="footer-lower">
-			<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-				+7 (812) 555-05-55</p>
+			<ul class="footer-contacts">
+				<li><address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address></li>
+				<li><a href="tel:+78125550555" class="telephone">+7 (812) 555-05-55</a></li>
+			</ul>
 			<ul class="footer-lower-menu">
 				<li><a href="#">Материалы</a></li>
 				<li><a href="#">Техника</a></li>
