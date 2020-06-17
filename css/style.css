@@ -90,11 +90,12 @@ a{
 }
 
 .slider-buttons{
+  margin: 0 216px;
   position: absolute;
   bottom: 36px;
   left: 0;
+  right: 0;
   display: flex;
-  width: 100%;
   justify-content: center;
 }
 
@@ -2443,4 +2444,9 @@ display: block;
   70%   {transform: translateY(30px);}
   90%   {transform: translateY(-10px);}
   100%  {transform: translateY(0);}
+}
+
+
+.footer-lower .telephone{
+  color: var(--white, #ffffff) ;
 }
