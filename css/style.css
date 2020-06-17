@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 2 version,not dead,not ie <= 11
+*/
+
 :root{
   --header-darkhover: #161D29;
   --menu-active-darkblue: #1D2739;
@@ -419,11 +426,13 @@ a{
 
 .filter-vendors .input-vendors:disabled + label{
   opacity: 0.4;
-  filter: contrast(1);
+  -webkit-filter: contrast(1);
+          filter: contrast(1);
 }
 
 .filter-vendors label:hover::before{
-  filter: contrast(0.77);
+  -webkit-filter: contrast(0.77);
+          filter: contrast(0.77);
 }
 
 .filter-vendors .input-vendors:focus ~ label{
@@ -468,7 +477,8 @@ a{
 
 .filter-power .input-power:disabled + label{
   opacity: 0.4;
-  filter: contrast(1);
+  -webkit-filter: contrast(1);
+          filter: contrast(1);
 }
 
 .filter-power .input-power:focus ~ label{
@@ -476,7 +486,8 @@ a{
 }  
 
 .filter-power label:hover::before{
-  filter: contrast(0.77);
+  -webkit-filter: contrast(0.77);
+          filter: contrast(0.77);
 }
 
 .price-min{
@@ -742,8 +753,10 @@ padding-bottom: 20px;
 
 .writeus.writeus-show{
   display: block;
-  animation-name: bounce;
-  animation-duration: 0.6s;
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
 .writeus .wrapper{
@@ -1446,7 +1459,8 @@ padding-bottom: 20px;
 
 .vendor-list img{
   display: block;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .slider-items li{
@@ -1607,6 +1621,20 @@ display: block;
   left: 0;
 
   width: 100%;
+}
+
+.search-input::-webkit-input-placeholder{
+  color: var(--white, #ffffff);
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.search-input::-moz-placeholder{
+  color: var(--white, #ffffff);
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .search-input::placeholder{
@@ -2333,7 +2361,8 @@ display: block;
   display: flex;
   justify-content: center;
   align-items: center;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .item-image img{
@@ -2428,6 +2457,12 @@ display: block;
   right: 0px;
 }
 
+@-webkit-keyframes snake{
+  0%, 100%                  {transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90%   {transform: translateX(-10px);}
+  20%, 40%, 60%, 80%        {transform: translateX(10px);}
+}
+
 @keyframes snake{
   0%, 100%                  {transform: translateX(0);}
   10%, 30%, 50%, 70%, 90%   {transform: translateX(-10px);}
@@ -2435,8 +2470,17 @@ display: block;
 }
 
 .writeus.modal-error{
-  animation-name: snake;
-  animation-duration: 0.6s;
+  -webkit-animation-name: snake;
+          animation-name: snake;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+}
+
+@-webkit-keyframes bounce{
+  0%    {transform: translateY(-2000px);}
+  70%   {transform: translateY(30px);}
+  90%   {transform: translateY(-10px);}
+  100%  {transform: translateY(0);}
 }
 
 @keyframes bounce{
