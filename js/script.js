@@ -113,20 +113,19 @@ service_control_list.forEach(element =>
 	})
 );
 
-
 window.addEventListener("keydown", function(evt){
-	if (evt.keyCode === 27) {
-		if (writeus_popup && writeus_popup.classList.contains("writeus-show")) {
+	if (evt.keyCode === 27){
+		if (writeus_popup && writeus_popup.classList.contains("writeus-show")){
 			evt.preventDefault();
 			writeus_popup.classList.remove("writeus-show");
 		}
 
-		if (writeus_popup && map_popup.classList.contains("map-show")) {
+		if (writeus_popup && map_popup.classList.contains("map-show")){
 			evt.preventDefault();
 			map_popup.classList.remove("map-show");
 		}
 
-		if (add_popup && add_popup.classList.contains("add-show")) {
+		if (add_popup && add_popup.classList.contains("add-show")){
 			evt.preventDefault();
 			add_popup.classList.remove("add-show");
 		}
@@ -143,7 +142,7 @@ if (slider){
 	let slider_buttons = slider.querySelectorAll(".slider-buttons button");
 	let activeSlide = 1;
 
-	function changeSlide(index) {
+	function changeSlide(index){
 		slider_buttons[activeSlide].classList.remove("active");
 		slider_items[activeSlide].classList.remove("active");
 		activeSlide = index;
@@ -151,13 +150,12 @@ if (slider){
 		slider_items[activeSlide].classList.add("active");
 	}
 
-
 	slider_buttons.forEach((element, i) => 
 		element.addEventListener("click", function(evt){
 			evt.preventDefault();
 		    if (element.classList.contains("active")){
 		      return;
-		    }
+			}
 		    changeSlide(i);
 		})
 	)
@@ -174,7 +172,7 @@ if (slider){
 		changeSlide(nextSlideIndex);
 	})
 
-	slider_prev.addEventListener("click", function(evt) {
+	slider_prev.addEventListener("click", function(evt){
 		evt.preventDefault();
 		let prevSlideIndex;
 		if (activeSlide == 0){
