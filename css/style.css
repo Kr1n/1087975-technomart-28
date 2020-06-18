@@ -655,6 +655,10 @@ a{
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
+.popup-map iframe{
+  border: 0;
+}
+
 .map-show{
   display: block;
 }
