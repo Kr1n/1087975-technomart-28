@@ -1732,7 +1732,7 @@ a{
   text-decoration: none;
 }
 
-.footer a:active{
+.footer a.logo:active{
   opacity: 1;
 }
 
@@ -1785,16 +1785,16 @@ a{
   background-color: var(--success, #5FBB2D);
 }
 
-.header-top .do-order:active{
+.header-top .do-order[href]:active{
   background-color: var(--basic-green, #63A63E);
 }
 
-.header-top .cart.empty:active,
-.header-top .favorite:active{
+.header-top .cart.empty[href]:active,
+.header-top .favorite[href]:active{
   background-color: var(--header-darkhover, #161D29);
 }
 
-.header-top .cart.filled:active{
+.header-top .cart.filled[href]:active{
   background-color: var(--basic-error, #BA2732);
 }
 
