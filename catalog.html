@@ -104,13 +104,15 @@
 							<div class="scale">
 								<div class="bar"></div>
 							</div>
-							<button type="button" class="toggle toggle-min"></button>
-							<button type="button" class="toggle toggle-max"></button>
+							<button type="button" class="toggle toggle-min" aria-label="Ползунок минимальной цены"></button>
+							<button type="button" class="toggle toggle-max" aria-label="Ползунок максимальной цены"></button>
 						</div>
 
 						<div class="range-text">
-							<input class="price-min" type="text" name="price-min" placeholder="0">
-							<input class="price-max" type="text" name="price-max" placeholder="30000">
+							<label class="visually-hidden" for="price-min">Минимальная цена</label>
+							<input class="price-min" type="text" name="price-min" id="price-min" placeholder="0">
+							<label class="visually-hidden" for="price-max">Максимальная цена</label>
+							<input class="price-max" type="text" name="price-max" id="price-max" placeholder="30000">
 						</div>
 					</fieldset>
 
