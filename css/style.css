@@ -891,8 +891,8 @@ a{
 }
 
 .footer-bottom .container{
-   display: flex;
-   justify-content: flex-start;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .copyright{
@@ -1755,10 +1755,6 @@ a{
   justify-content: flex-start;
 }
 
-.logo:active{
-  
-}
-
 .header-top .logo{
   display: block;
 }
@@ -1976,7 +1972,9 @@ a{
   padding-bottom: 12px;
   box-sizing: border-box;
   display: flex;
-  max-width: 250px;
+  max-width: 242px;
+  min-width: 190px;
+  text-align: center;
 }
 
 .username svg{
